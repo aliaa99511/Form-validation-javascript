@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>task</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+    
+        <div class="container">
+            <h3>Form Validation</h3>
+            
+            <form id="myForm">
+                <!--Username-->
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" id="username" aria-describedby="usernameHelp" placeholder="Enter username">
+                    <small id="logUsername" class="form-text text-muted"></small>
+                </div>
+                <!--Username-->
+                <!--Password-->
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                    <small id="logPassword" class="form-text text-muted"></small>
+                </div>
+                <!--Password-->
+                <!--Email-->
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="logEmail" class="form-text text-muted"></small>
+                </div>
+                <!--Email-->
+                <!--Phone-->
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="text" class="form-control" id="phone" aria-describedby="phoneHelp" placeholder="Phone">
+                    <small id="logPhone" class="form-text text-muted"></small>
+                </div>
+                <!--Phone-->
+                <!--Address-->
+                <div>
+                    <label>Address</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <input type="number" class="form-control" placeholder="144" id="numAddress" name="numAddress">
+                        </div>
+                        <input type="text" class="form-control" placeholder="Enter your Address" aria-label="Text input with dropdown button">
+                      </div>
+                </div>
+                  <!--Address-->
+                  <br/>
+                <!--select-->
+                <div class="myselect">
+                    <div class="form-check form-check-inline select1">
+                        <label for="">country</label>
+                        <select name="slct1" class="form-control" id="slct1" onchange="selectFunction(this.id ,'slct2')">
+                          <option value="">-- choose country --</option>
+                          <option value="egypt">Egypt</option>
+                          <option value="america">America</option>
+                          <option value="india">India</option>
+                          <option value="canada">Canada</option>
+                          <option value="turkey">Turkey</option>
+                          <option value="german">German</option>
+                        </select>
+                    </div>
+                    <div class="form-check form-check-inline select2">
+                        <label for="">city</label>
+                        <select name="slct2" class="form-control" id="slct2">
+
+                            
+                        </select>
+                    </div>
+                </div>
+                <!--select-->
+                <br/>
+                <!--gender-->
+                <div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                        <label class="form-check-label" for="male">Male</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                        <label class="form-check-label" for="female">Female</label>
+                    </div>    
+                </div>
+                <!--gender-->
+
+                <br/>
+                <!--التجنيد-->
+                <div id="hideradio" style="display:none;">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineOptions" id="radio1" value="radio1">
+                        <label class="form-check-label" for="radio1">conscription</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineOptions" id="radio2" value="radio2">
+                        <label class="form-check-label" for="radio2">discharge</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineOptions" id="radio3" value="radio3">
+                        <label class="form-check-label" for="radio3">mobilization</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineOptions" id="radio4" value="radio4">
+                        <label class="form-check-label" for="radio4">levy en masse</label>
+                    </div>
+                </div>
+                <!--التجنيد-->
+
+                  <br/>
+
+                <!--Submit-->
+                <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+                <!--Submit-->
+
+            </form>
+        </div>
+    
+
+
+
+		
+
+
+                        
+		<script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/plugins.js"></script>
+        
+        <!--bootstrab js-->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+        <!--bootstrab js-->
+
+
+    </body>
+</html>
+
+
+
